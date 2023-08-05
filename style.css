@@ -1,0 +1,61 @@
+body{
+    background-color: yellow;
+}
+.container{
+    position: relative;
+    background-color: white;
+    width:40%;
+    left:30%;
+}
+.second{
+    display: flex;
+    gap:10px;
+}
+.paras{
+    padding:30px;
+}
+.image1{
+    padding-right: 6%;
+    width:35%;
+    height:30%;
+    margin-top: 1%;
+}
+.third{
+    display:flex;
+}
+.image2{
+    padding-top:10px;
+    padding-right: 6%;
+    width:35%;
+    height:30%;
+    margin-top: 1%;
+    
+}
+.animate{
+    animation-name: firstAnimation;
+    animation-duration: 3s;
+}
+.animate2{
+    animation-name: secondAnimation;
+    animation-duration: 3s;
+}
+@keyframes secondAnimation{
+    from{
+        opacity: 0%;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+}
+@keyframes firstAnimation{
+    from{
+        opacity: 0%;
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+        
+    }
+}
